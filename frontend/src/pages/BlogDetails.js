@@ -17,7 +17,7 @@ const BlogDetails = () => {
         if (!user) {
             return
         }
-        const response = await fetch(`http://localhost:3500/api/blogs/${id}`, {
+        const response = await fetch(`https://nicklearnsphotography.onrender.com/api/blogs/${id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`
@@ -37,7 +37,7 @@ const BlogDetails = () => {
                     </Link>
                 </div>
                 <div className="blog-image">
-                    <img src={`http://localhost:3500/${blogDetails[0].image}`} alt={blogDetails[0].title} />
+                    <img src={`https://nicklearnsphotography.onrender.com/${blogDetails[0].image}`} alt={blogDetails[0].title} />
                 </div>
                 <div className="blog-text">
                     <h2>{blogDetails[0].title}</h2> 

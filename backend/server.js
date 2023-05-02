@@ -14,7 +14,7 @@ const app = express()
 app.use(express.json())
 app.use('/public', express.static('public'))
 const corsOptions = {
-    origin: 'http://localhost:3000',
+    origin: 'https://nicklearnsphotography.onrender.com',
     optionsSuccessStatus: 200,
     credentials: true
   }
@@ -36,9 +36,9 @@ app.use('*', (req, res) => {
 // connect and listen to DB
 mongoose.connect(process.env.DATABASE_URI)
 .then(() => {
-    console.log('Connected to DB')
+    // console.log('Connected to DB')
     app.listen(process.env.PORT, () => {
-        console.log(`listening on port ${process.env.PORT}`)
+        // console.log(`listening on port ${process.env.PORT}`)
     })
 })
 .catch((err) => {

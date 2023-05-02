@@ -10,7 +10,7 @@ export const useRegister = () => {
         setIsLoading(true)
         setError(null)
 
-        const response = await fetch('http://localhost:3500/api/user/register', {
+        const response = await fetch('https://nicklearnsphotography.onrender.com/api/user/register', {
             method: 'POST',
             headers: {'Content-type': 'application/json'},
             body: JSON.stringify({email, password})

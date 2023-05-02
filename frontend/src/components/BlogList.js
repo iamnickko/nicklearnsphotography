@@ -8,7 +8,7 @@ const BlogList = ({ blogs }) => {
             {blogs.map(blog => ( 
                 <article className="blog-article" key={blog._id}>
                     <Link to={`/${blog._id}`}>
-                        <img src={`http://localhost:3500/${blog.image}`} alt="blog preview"></img>
+                        <img src={`https://nicklearnsphotography.onrender.com/${blog.image}`} alt="blog preview"></img>
                         <h2>{blog.title}</h2>
                     </Link>
                 </article> 

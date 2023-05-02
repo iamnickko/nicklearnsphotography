@@ -136,7 +136,7 @@ footer {
 }
 /* HeroImage */
 .hero-image {
-  background-image: url("http://localhost:3500/public/images/2f586f78f00d4e3ce10532912586a010.jpg");
+  background-image: url("https://nicklearnsphotography.onrender.com/public/images/2f586f78f00d4e3ce10532912586a010.jpg");
   background-color: var(--primary);
   height: 75vh;
   width: 100vw;

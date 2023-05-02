@@ -10,7 +10,7 @@ const Home = () => {
 
     useEffect(() => {
         const fetchBlogs = async () => {
-            const response = await fetch('http://localhost:3500/api/blogs', {
+            const response = await fetch('https://nicklearnsphotography.onrender.com/api/blogs', {
             })
             const json = await response.json()
 
