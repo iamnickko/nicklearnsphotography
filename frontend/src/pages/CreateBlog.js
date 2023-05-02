@@ -25,7 +25,7 @@ const CreateBlog = () => {
         data.set('catalogue', catalogue)
         data.set('image', image[0])
         
-        const response = await fetch('https://nicklearnsphotography.onrender.com/api/blogs', {
+        const response = await fetch('https://nicklearnsphotography-api.onrender.com/api/blogs', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${user.token}`

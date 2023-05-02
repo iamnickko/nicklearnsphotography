@@ -15,7 +15,7 @@ const EditBlog = () => {
 
     useEffect(() => {
         const fetchBlog = async () => {
-            const response = await fetch(`https://nicklearnsphotography.onrender.com/api/blogs/${id}`)
+            const response = await fetch(`https://nicklearnsphotography-api.onrender.com/api/blogs/${id}`)
             const json = await response.json()
             console.log('useeffect ', json)
             setTitle(json.title)
@@ -33,7 +33,7 @@ const EditBlog = () => {
         e.preventDefault()
 
         const blog = { title, summary, catalogue }
-        const response = await fetch(`https://nicklearnsphotography.onrender.com/api/blogs/${id}`, {
+        const response = await fetch(`https://nicklearnsphotography-api.onrender.com/api/blogs/${id}`, {
             method: 'PATCH',
             headers: {
                 'Authorization': `Bearer ${user.token}`,
