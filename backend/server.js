@@ -36,11 +36,11 @@ app.use('*', (req, res) => {
 // connect and listen to DB
 mongoose.connect(process.env.DATABASE_URI)
 .then(() => {
-    // console.log('Connected to DB')
+    console.log('Connected to DB')
     app.listen(process.env.PORT, () => {
-        // console.log(`listening on port ${process.env.PORT}`)
+        console.log(`listening on port ${process.env.PORT}`)
     })
 })
 .catch((err) => {
-    // console.log(err)
+    console.log(err)
 })
