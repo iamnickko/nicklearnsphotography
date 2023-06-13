@@ -177,6 +177,14 @@ footer {
 }
 
 /* PAGES */
+/* Home */
+.blogbtns {
+  text-align: center;
+}
+.homebtns {
+  font-size: 20px;
+}
+
 /* CreateBlog, Login, Register */
 .form {
   margin: 50px auto 0 auto;
@@ -205,18 +213,22 @@ fieldset {
 fieldset > input {
   padding-left: 10px;
 }
-form button, .logoutbtn {
-  margin: 7px 0;
+form button, .homebtns, .logoutbtn {
+  margin: 7px 5px;
   color: var(--secondary);
   background-color: var(--tertiary);
   border-radius: 7px;
   border: 1px solid var(--secondary);
   padding: 7px;
 }
-form button:hover, .logoutbtn:hover {
+form button:hover, .homebtns:hover, .logoutbtn:hover {
   background-color: var(--secondary);
   color: var(--primary);
   cursor: pointer;
+}
+.homebtns:focus {
+  background-color: var(--secondary);
+  color: var(--primary);
 }
 
 /* BlogDetails */
